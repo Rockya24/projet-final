@@ -1,0 +1,131 @@
+/* ========================== */
+/*        BASE ET POLICE      */
+/* ========================== */
+body {
+  background: #ffffff;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================== */
+/*       CONTAINER QUIZ       */
+/* ========================== */
+.quiz-container {
+  max-width: 800px;
+  margin: 100px auto 50px;
+  padding: 40px 30px;
+  background: linear-gradient(to bottom, #f9f0fc, #fff);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.quiz-container h1 {
+  font-size: 2rem;
+  color: #ad1457;
+  margin-bottom: 25px;
+}
+
+/* ========================== */
+/*        QUESTION            */
+/* ========================== */
+#question {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #353535;
+}
+
+/* ========================== */
+/*        RÉPONSES            */
+/* ========================== */
+.answer-button {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 12px 20px;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #ad1457;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.answer-button:hover {
+  background-color: #ad1457;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+.answer-button.correct {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.answer-button.wrong {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+/* ========================== */
+/*        BOUTON SUIVANT      */
+/* ========================== */
+#next-button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #ad1457;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+  background-color: #8e0c3f;
+}
+
+/* ========================== */
+/*        RÉSULTAT            */
+/* ========================== */
+#result {
+  padding: 40px 20px;
+}
+
+#scoreText {
+  font-size: 1.6rem;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* ========================== */
+/*       RESPONSIVE           */
+/* ========================== */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 20px 15px;
+    margin-top: 60px;
+  }
+
+  #question {
+    font-size: 1.2rem;
+  }
+
+  .answer-button {
+    font-size: 0.95rem;
+  }
+
+  #scoreText {
+    font-size: 1.3rem;
+  }
+}
+
